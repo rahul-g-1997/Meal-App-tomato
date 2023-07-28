@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-image: url("background.avif") ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: rgb(0, 0, 0);
+}
+
+
+/* header navbar */
+#nav {
+  background-color: #FF3044;
+  box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.7);
+}
+
+.navbar-brand h1 {
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+#search-bar {
+  max-width: 300px;
+}
+
+#search-bar input {
+  height: 40px;
+  border-radius: 20px;
+}
+
+/* meal card */
+.card {
+  background-color: #ffffff; /* Change the card background color */
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  color: #000;
+  transition: transform 0.2s;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 10px;
+  color: #000;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+/* meal details container */
+#meal-details {
+  background-color: #FADBD8; 
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+#meal-details img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+#meal-header {
+  padding: 20px;
+}
+
+#meal-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#meal-header p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+}
+
+#meal-instruction {
+  padding: 20px;
+}
+
+
+
+/* Change favorite icon color */
+.btn-outline-light.active i.fa-heart,
+#main .btn-outline-light.active i.fa-heart {
+  color: red !important;
+}
+
+.btn-outline-light {
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+  }
+  
+  /* Change favorite icon color */
+  .btn-outline-light.active i.fa-heart {
+    color: red;
+  }
+
+/* Additional Styling */
+
+#header-text {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: #FF3044;
+  border-color: #FF3044;
+}
+
+.btn-primary:hover {
+  background-color: #FF2030;
+  border-color: #FF2030;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 576px) {
+  #search-bar {
+    max-width: 100%;
+  }
+}
